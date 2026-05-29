@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400&family=Jura:wght@400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+    <div class="header-wrapper">
+        <header class="container">
+            <div class="logo"><img src="img/logo.png" alt="logo"></div>
+            <nav class="navigation">
+                <ol>
+                    <li><a href="index6.html">Блог</a></li>
+                    <li><a href="index2.html">О нас</a></li>
+                    <li><a href="index1.html">Каталог</a></li>
+                    <li><a href="index3.html">Корзина</a></li>
+                </ol>
+            </nav>
+            <!-- Бургер-кнопка для мобильных -->
+            <button class="burger" id="burger" aria-label="Меню">
+                <span></span><span></span><span></span>
+            </button>
+        </header>
+    </div>
+    
+    <div class="cart-title">
+        <h1>КОРЗИНА</h1>
+    </div>
+    <div class="cart-items">
+        <div class="cart-item">
+            <img src="img/candle_december.svg" alt="Аромасвеча Декабрь">
+
+            <div class="cart-info">
+                <h2>Аромасвеча «Декабрь»</h2>
+                <p>Аромат зимних вечеров, согревающий душу запахом корицы, цитрусовых и сладкого миндаля.</p>
+                <span>Цена: 499 ₽</span>
+                <span>Количество: 1 шт.</span>
+            </div>
+
+            <button class="remove">×</button>
+
+            <div class="cart-controls">
+                <button>+</button>
+                <button>−</button>
+            </div>
+        </div>
+
+        <div class="cart-item">
+            <img src="img/candle_february.svg" alt="Аромасвеча Февраль">
+
+            <div class="cart-info">
+                <h2>Аромасвеча «Февраль»</h2>
+                <p>Ноты свежего березового сока, деликатной прохлады утренней росы и легкой пряности хвои.</p>
+                <span>Цена: 499 ₽</span>
+                <span>Количество: 1 шт.</span>
+            </div>
+
+            <button class="remove">×</button>
+
+            <div class="cart-controls">
+                <button>+</button>
+                <button>−</button>
+            </div>
+        </div>
+
+        <div class="cart-item">
+            <img src="img/candle_april.svg" alt="Аромасвеча Апрель">
+
+            <div class="cart-info">
+                <h2>Аромасвеча «Апрель»</h2>
+                <p>Нежные аккорды распускающихся почек, свежие ноты мокрой земли после дождя и едва уловимый аромат
+                    полевых цветов.</p>
+                <span>Цена: 499 ₽</span>
+                <span>Количество: 1 шт.</span>
+            </div>
+
+            <button class="remove">×</button>
+
+            <div class="cart-controls">
+                <button>+</button>
+                <button>−</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="order-details">
+        <h2>Детали заказа</h2>
+
+        <div class="order-row">
+            <span>Количество товаров</span>
+            <span>3</span>
+        </div>
+
+        <div class="order-row">
+            <span>Сумма заказа</span>
+            <span>1497 ₽</span>
+        </div>
+    </div>
+    <button class="checkout">Оформить заказ</button>
+
+    <footer>
+        <p class="footer-stay">Оставайтесь на связи!</p>
+        <nav>
+            <ol class="footer-nav">
+                <li><a href="#">Личный кабинет</a></li>
+                <li><a href="index7.html">Контакты</a></li>
+                <li><a href="#">Доставка</a></li>
+            </ol>
+        </nav>
+    </footer>
+    <script>
+        const burger = document.getElementById('burger');
+        const nav = document.querySelector('.navigation');
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('open');
+            burger.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,349 @@
+.geologica-uniquifier{
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0,
+    "SHRP" 0;
+}
+.jura-uniquifier {
+  font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  color: white;
+  font-family: "Jura", sans-serif;
+}
+
+body {
+  background-color: #311103;
+  overflow-x: hidden;
+}
+
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+
+.container {
+  width: min(90%, 1200px);
+  margin: 0 auto;
+}
+
+
+.header-wrapper {
+  background-color: #311103;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo img {
+  height: 60px;
+  display: block;
+}
+
+.navigation ol {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.navigation ol li {
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 10px 28px;
+  font-size: 15px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.navigation ol li:hover {
+  background: rgba(255,255,255,0.12);
+}
+
+/* Бургер */
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.burger span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background: white;
+  border-radius: 2px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.burger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.burger.active span:nth-child(2) { opacity: 0; }
+.burger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+.contacts-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    font-family: "Jura", sans-serif;
+    color: #000000;
+}
+
+
+.contacts-title {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.contacts-board {
+    background-color: #BCA296; 
+    border: 6px solid #764B4B;
+    border-radius: 20px;
+    color: #000000;            
+    padding: 40px 20px;
+    text-align: center;       
+}
+
+.contacts-title{
+  font-family: "Geologica", sans-serif;
+}
+
+.contacts-board p {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+.contacts-board h3 {
+    font-size: 22px;
+    margin: 30px 0 15px;
+    color: #000000;
+}
+
+
+.time {
+    margin: 0 auto;          
+    font-size: 15px;
+    width: 320px;   
+    color: #000000;      
+}
+
+
+.time td {
+    padding: 6px 0; ; 
+    color: #000000;         
+}
+
+.schedule-table td:first-child { text-align: left; }
+.schedule-table td:last-child { text-align: right; }
+
+
+.contact-btn {
+  display: block;
+  background-color: #311103;     
+  color: #ffffff;            
+  font-size: 20px;        
+  font-weight: 500;
+  font-family: "Jura", sans-serif;     
+  border: 1.5px solid #ffffff; 
+  border-radius: 50px;          
+  padding: 15px 45px;          
+  cursor: pointer;
+  margin: 40px auto;            
+  transition: all 0.3s ease; 
+  margin-top: -30px; 
+  margin-bottom: 30px; 
+}   
+
+
+.contact-btn:hover {
+    background-color: #421908;
+}
+
+footer {
+  background-color: #1C0A01;
+  padding: 40px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  font-size: clamp(14px, 1.3vw, 20px);
+  flex-wrap: wrap;
+}
+
+.footer-stay {
+  font-family: "Jura", sans-serif;
+  color: white;
+  white-space: nowrap;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.footer-nav li {
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 10px 24px;
+  transition: background 0.2s;
+}
+
+.footer-nav li:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+
+@media (max-width: 600px) {
+  
+  .logo img {
+    height: 44px;
+  }
+
+  .navigation {
+    display: none;
+    width: 100%;
+    order: 3;
+  }
+
+  .navigation.open {
+    display: block;
+  }
+
+  .navigation ol {
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  .navigation ol li {
+    padding: 12px 20px;
+    justify-content: center;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 32px 5%;
+  }
+
+  .footer-nav {
+    justify-content: center;
+  }
+
+  .footer-nav li {
+    padding: 10px 16px;
+  }
+}
+
+@media (max-width: 900px) {
+    
+    .contacts-board {
+        width: 95%;
+        max-width: 340px; 
+        padding: 25px 15px;
+        margin: 20px auto;
+        box-sizing: border-box;
+    }
+
+    .schedule-table, 
+    .schedule-table tbody, 
+    .schedule-table tr, 
+    .schedule-table td {
+        display: block; 
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .schedule-table tr {
+        margin-bottom: 15px; 
+        text-align: center;  
+    }
+
+    .schedule-table td:first-child {
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 3px;  
+        text-align: center;  
+    }
+
+    .schedule-table td:last-child {
+        font-size: 14px;
+        opacity: 0.8;                   
+        text-align: center; 
+    }
+}
+
+@media (max-width: 768px) {
+
+    .contacts-board p {
+        font-size: 13px;
+        word-wrap: break-word;    
+        word-break: break-all;    
+        overflow-wrap: break-word;
+    }
+}
+
+@media (max-width: 768px) {
+
+    table.time {
+        width: 100%;      
+        max-width: 260px;
+        margin: 0 auto;  
+    }
+
+    table.time td {
+        font-size: 14px ;  
+        padding: 6px 0 ;
+        width: 50% ;      
+    }
+
+    table.time td:first-child {
+        text-align: left ;  
+    }
+    
+    table.time td:last-child {
+        text-align: right ;
+    }
+}

@@ -1,0 +1,627 @@
+.geologica-uniquifier{
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0,
+    "SHRP" 0;
+}
+.jura-uniquifier {
+  font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  color: white;
+  font-family: "Jura", sans-serif;
+}
+
+body {
+  background-color: #311103;
+  overflow-x: hidden;
+}
+
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+  width: min(90%, 1200px);
+  margin: 0 auto;
+}
+
+
+.header-wrapper {
+  background-color: #311103;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo img {
+  height: 60px;
+  display: block;
+}
+
+.navigation ol {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.navigation ol li {
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 10px 28px;
+  font-size: 15px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.navigation ol li:hover {
+  background: rgba(255,255,255,0.12);
+}
+
+/* Бургер */
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.burger span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background: white;
+  border-radius: 2px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.burger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.burger.active span:nth-child(2) { opacity: 0; }
+.burger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+
+
+p{
+  font-family: "Jura", sans-serif;
+  font-size: 32px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero-title{
+  font-family: "Geologica", sans-serif;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  margin: 60px;
+}
+
+.category-card{
+  display: flex;
+}
+
+.container1 {
+  display: flex; 
+  gap: 20px;    
+  justify-content: center; 
+  font-size: 32px;
+  margin-top: 30px;
+}
+.container1 div{
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  padding: 69px 143px;
+}
+.category{
+  width: fit-content;
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  padding: 69px 143px;
+  justify-content: center;
+  margin-left: auto;  
+  margin-right: auto;
+}
+.container2 div{
+  border: 2px solid #ffffff;  
+  border-radius: 50px;       
+  padding: 29px 140px;         
+  width: fit-content;         
+  margin: 0 auto;             
+  color: white;               
+  font-size: 32px;
+}
+.container2{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.hero-title{
+  text-transform: uppercase;
+  font-size: 48px;
+  color: white;
+  font-family: "Geologica", sans-serif;
+  text-align: center;
+  justify-content: center;
+}
+
+.container4{
+  display: flex;
+  gap: 20px;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.container4 img {
+  display: flex;
+  width: 310px;
+  height: 320px;
+  border: 1px solid #ffffff;  
+  border-radius: 20px;     
+}
+
+.btn_one{
+  font-family: "Jura", sans-serif;
+  font-size: 20px;
+  width: 310px;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  background-color: #311103;
+  padding: 20px 36px;
+}
+
+.container5{
+  display: flex;
+  gap: 20px;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 53px;
+}
+.container5 img {
+  display: flex;
+  width: 310px;
+  height: 320px;
+  border: 1px solid #ffffff;  
+  border-radius: 20px;     
+}
+
+.container6{
+  display: flex;
+  gap: 20px;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 53px;
+}
+.container6 img {
+  display: flex;
+  width: 310px;
+  height: 320px;
+  border: 1px solid #ffffff;  
+  border-radius: 20px;     
+}
+
+h4{
+  font-family: "Geologica", sans-serif;
+}
+
+.hero-title2 h4{
+  font-family: "Geologica", sans-serif;
+  font-size: 32px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hero-title2 .text{
+  font-family: "Jura", sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+    .hero-title2 {
+      padding-right: 15px;
+    }
+
+    .hero-title2 h4 {
+      font-size: 22px; 
+      margin: 10px 10px; 
+      padding: 20px 0;
+    }
+
+    .hero-title2 .text {
+      font-size: 18px; 
+      line-height: 1.4; 
+    }
+}
+
+
+.container4 h3{
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+.container5 h3{
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+.container6 h3{
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+
+.container7{
+  display: flex;
+  gap: 20px;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 53px;
+}
+.container7 img {
+  display: flex;
+  width: 640px;
+  height: 410px;
+  border: 1px solid #ffffff;  
+  border-radius: 20px;     
+}
+
+.container7 h5{
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+.container8 h5{
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+
+.container8{
+  display: flex;
+  gap: 20px;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 53px;
+  font-size: 20px;
+}
+.container8 img {
+  display: flex;
+  width: 640px;
+  height: 410px;
+  border: 1px solid #ffffff;  
+  border-radius: 20px;   
+}
+.btn_two{
+  font-family: "Jura", sans-serif;
+  font-size: 20px;
+  width: 310px;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  background-color: #311103;
+  padding: 20px 36px;
+  justify-content: center;
+  align-self: center;
+  display: block;            
+  margin: 20px auto 0;
+}
+.text-large{
+  font-size: 90px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Geologica", sans-serif;
+  margin: 100px 0 0 0;
+}
+.decription{
+  font-size: 32px;
+  font-family: "Jura", sans-serif;
+  text-align: center;
+  color: white;
+}
+.content{
+  font-size: 24px;
+  text-align: center;
+  color: white;
+  font-family: "Jura", sans-serif;
+  margin-bottom: 40px;
+}
+
+.novelties-wrapper {
+  padding: 60px 0 100px;
+  text-align: center;
+}
+.scroll-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0 20px 24px;
+  scrollbar-width: thin;
+  scrollbar-color: #bca296 #311103;
+  justify-content: flex-start;
+  scroll-behavior: smooth;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+.scroll-container::-webkit-scrollbar {
+  height: 8px;
+}
+.scroll-container::-webkit-scrollbar-track {
+  background: #311103;
+}
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: #bca296;
+  border-radius: 10px;
+}
+.card {
+  width: 32.5%;
+  border-radius: 20px;
+  border: 1px solid #ffffff;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.novelty-img {
+  width: 100%;
+  height: clamp(260px, 30vw, 397px);
+  object-fit: cover;
+  border-radius: 20px;
+  border-bottom: none;
+  display: block;
+  
+}
+.card-title {
+  width: 100%;
+  height: 88px;
+  background-color: #8e6d5f;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  border: 1px solid #ffffff;
+  border-radius: 0 0 20px 20px;
+}
+
+footer {
+  background-color: #1C0A01;
+  padding: 40px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  font-size: clamp(14px, 1.3vw, 20px);
+  flex-wrap: wrap;
+}
+
+.footer-stay {
+  font-family: "Jura", sans-serif;
+  color: white;
+  white-space: nowrap;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.footer-nav li {
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 10px 24px;
+  transition: background 0.2s;
+}
+
+.footer-nav li:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+
+
+
+
+@media (max-width: 600px) {
+  
+  .logo img {
+    height: 44px;
+  }
+
+  .navigation {
+    display: none;
+    width: 100%;
+    order: 3;
+  }
+
+  .navigation.open {
+    display: block;
+  }
+
+  .navigation ol {
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  .navigation ol li {
+    padding: 12px 20px;
+    justify-content: center;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 32px 5%;
+  }
+
+  .footer-nav {
+    justify-content: center;
+  }
+
+  .footer-nav li {
+    padding: 10px 16px;
+  }
+
+  .footer-stay{
+    font-size: 14px;
+    text-align: center;
+    display: block;       
+    width: 100%;  
+  }
+}
+
+@media (max-width: 600px) {
+  .container4, .container5, .container6, .container7, .container8 {
+    width: 100% !important; 
+    padding: 20px 10px !important;
+    flex-direction: column !important; 
+  }
+
+  .container4 img, .container5 img, .container6 img, 
+  .container7 img, .container8 img {
+    width: 100% !important;     
+    max-width: 340px !important; 
+    height: auto !important;    
+  }
+
+  .btn_one, .btn_two {
+    width: 100% !important;
+    max-width: 340px !important;
+    padding: 15px 20px !important; 
+  }
+  
+  .hero-title h1, .text-large {
+    font-size: 32px !important; 
+    margin-top: 40px !important;
+  }
+}
+
+
+
+
+@media (max-width: 600px) {
+  .hero-title { 
+    font-size: 20px !important; 
+    margin: 50px 0 !important;  
+         
+  }
+
+  .container2 div {
+    font-size: 18px !important;    
+    padding: 15px 30px !important; 
+    width: 100% !important;        
+    max-width: 290px !important;   
+    margin: 0 auto 15px auto !important;
+    border-radius: 40px !important; 
+    box-sizing: border-box !important;
+  }
+  
+  .container2 {
+    display: flex !important;
+    flex-direction: column !important; 
+    align-items: center !important;    
+    gap: 0 !important;                
+    width: 100% !important;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .text-large, .hero-title h2 {
+    font-size: 34px;    
+    margin-top: 50px;  
+    line-height: 1.2;
+  }
+
+  .description {
+    font-size: 18px;   
+    padding: 0 15px;    
+    line-height: 1.4;
+  }
+
+  .content {
+    font-size: 18px;
+    padding: 15px 0;
+  }
+
+  .scroll-container .card {
+    width: 280px;       
+    flex-shrink: 0;     
+  }
+
+  .novelties-wrapper {
+    padding: 30px 0;   
+  }
+}
+
+

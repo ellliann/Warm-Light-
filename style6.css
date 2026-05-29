@@ -1,0 +1,390 @@
+.geologica-<uniquifier> {
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0,
+    "SHRP" 0;
+}
+.jura-<uniquifier> {
+  font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  color: white;
+  font-family: "Jura", sans-serif;
+}
+
+body {
+  background-color: #311103;
+  overflow-x: hidden;
+}
+
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+
+.container {
+  width: min(90%, 1200px);
+  margin: 0 auto;
+}
+
+
+.header-wrapper {
+  background-color: #311103;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo img {
+  height: 60px;
+  display: block;
+}
+
+.navigation ol {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.navigation ol li {
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 10px 28px;
+  font-size: 15px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.navigation ol li:hover {
+  background: rgba(255,255,255,0.12);
+}
+
+/* Бургер */
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.burger span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background: white;
+  border-radius: 2px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.burger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.burger.active span:nth-child(2) { opacity: 0; }
+.burger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+
+.container {
+  margin: 0 auto;
+  width: min(90%, 1200px);
+  box-sizing: border-box;
+}
+
+
+
+
+
+.hero-section {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+.page-title {
+  font-size: clamp(28px, 4vw, 48px);
+  text-transform: uppercase;
+  color: white;
+  font-family: "Geologica", sans-serif;
+}
+.section-title {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Geologica", sans-serif;
+}
+
+.article-section {
+    max-width: 1200px;         
+    margin: 0 auto;            
+    padding: 40px 20px;       
+    box-sizing: border-box;
+}
+
+
+.article-grid {
+    display: flex;
+    justify-content: center;   
+    align-items: flex-start;   
+    gap: 60px;                 
+}
+
+.article-text {
+    font-family: "Jura", sans-serif;
+    width: 55%;               
+    color: #ffffff;
+}
+
+.article-text p {
+    font-size: 25px;
+    line-height: 1.6;
+    margin-bottom: 25px;       
+}
+.article-text p:last-child {
+    margin-bottom: 0;         
+}
+
+.article-images {
+    display: flex;
+    flex-direction: column;    
+    gap: 30px;                 
+    width: 40%;                
+}
+
+.img-item {
+    width: 100%;               
+    max-width: 450px;          
+    height: auto;              
+    border-radius: 40px;       
+    object-fit: cover;         
+}
+
+
+
+
+
+.container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;        
+    box-sizing: border-box;
+    font-family: "Jura", sans-serif;
+}
+
+.hero-title {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-transform: uppercase;  
+    letter-spacing: 2px;
+    font-family: "Geologica", sans-serif;
+}
+
+.text {
+    font-size: 18px;
+    color: #ffffff;
+    max-width: 700px;
+    margin: 0 auto 50px;        
+    line-height: 1.5;
+    opacity: 0.9;
+}
+
+.container4 {
+    display: flex;
+    justify-content: center;   
+    gap: 30px;                  
+    flex-wrap: wrap;            
+}
+
+.container4 article {
+    display: flex;
+    flex-direction: column;     
+    align-items: center;
+    width: 320px;              
+}
+
+.container4 article img {
+    width: 100%;
+    height: 320px;              
+    object-fit: cover;         
+    border-radius: 30px;      
+    margin-bottom: 25px;        
+}
+
+.btn_one {
+    display: block;
+    width: 100%;               
+    padding: 15px 0;
+    background-color: #bfaea5;   
+    color: #000000;            
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Jura", sans-serif;
+    text-align: center;
+    border: none;               
+    border-radius: 20px;        
+    cursor: pointer;            
+    transition: background-color 0.2s ease; 
+}
+
+footer {
+  background-color: #1C0A01;
+  padding: 40px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  font-size: clamp(14px, 1.3vw, 20px);
+  flex-wrap: wrap;
+}
+
+.footer-stay {
+  font-family: "Jura", sans-serif;
+  color: white;
+  white-space: nowrap;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.footer-nav li {
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 10px 24px;
+  transition: background 0.2s;
+}
+
+.footer-nav li:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .logo img {
+    height: 44px;
+  }
+
+  .navigation {
+    display: none;
+    width: 100%;
+    order: 3;
+  }
+
+  .navigation.open {
+    display: block;
+  }
+
+  .navigation ol {
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  .navigation ol li {
+    padding: 12px 20px;
+    justify-content: center;
+  }
+
+  .burger {
+    display: flex;
+  }
+footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 32px 5%;
+  }
+
+  .footer-nav {
+    justify-content: center;
+  }
+
+  .footer-nav li {
+    padding: 10px 16px;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  
+    .article-section {
+        padding: 30px 15px; 
+    }
+
+
+    .article-grid {
+        flex-direction: column; 
+        gap: 30px;              
+    }
+
+
+    .article-text {
+        width: 100%;            
+        text-align: center;    
+    }
+
+    .article-text p {
+        font-size: 16px;       
+        line-height: 1.5;
+        margin-bottom: 15px;    
+    }
+
+
+    .article-images {
+        width: 100%;            
+        gap: 20px;             
+    }
+
+    
+    .article-images img {
+        width: 100%;           
+        height: auto;           
+        border-radius: 20px;   
+    }
+    .page-title{
+      margin: 20px;
+      font-size: 35px;
+    }
+    .section-title{
+      font-size: 28px;
+    }
+}

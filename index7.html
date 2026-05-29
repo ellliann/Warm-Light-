@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style7.css">
+    <title>Контакты</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="header-wrapper">
+        <header class="container">
+            <div class="logo"><img src="img/logo.png" alt="logo"></div>
+            <nav class="navigation">
+                <ol>
+                    <li><a href="index6.html">Блог</a></li>
+                    <li><a href="index2.html">О нас</a></li>
+                    <li><a href="index1.html">Каталог</a></li>
+                    <li><a href="index3.html">Корзина</a></li>
+                </ol>
+            </nav>
+            <!-- Бургер-кнопка для мобильных -->
+            <button class="burger" id="burger" aria-label="Меню">
+                <span></span><span></span><span></span>
+            </button>
+        </header>
+    </div>
+
+<section class="contacts-section">
+    <h2 class="contacts-title">ГДЕ НАС НАЙТИ?</h2>
+
+    <div class="contacts-board">
+        <p>Адрес: г. Санкт-Петербург, ул. Большая Зеленина, д. 14Б</p>
+        <p>Номер телефона: +79000000000</p>
+        <p>Почта: www.warmlight.com</p>
+        
+        <h3>Время работы</h3>
+        
+        <table class="time">
+            <tr><td>Понедельник</td><td>10:00-20:00</td></tr>
+            <tr><td>Вторник</td><td>10:00-20:00</td></tr>
+            <tr><td>Среда</td><td>10:00-20:00</td></tr>
+            <tr><td>Четверг</td><td>10:00-20:00</td></tr>
+            <tr><td>Пятница</td><td>10:00-20:00</td></tr>
+            <tr><td>Суббота</td><td>10:00-20:00</td></tr>
+            <tr><td>Воскресенье</td><td>10:00-20:00</td></tr>
+        </table>
+    </div>
+</section>
+
+<button class="contact-btn">Связаться с нами</button>
+
+ <footer>
+        <p class="footer-stay">Оставайтесь на связи!</p>
+        <nav>
+            <ol class="footer-nav">
+                <li><a href="#">Личный кабинет</a></li>
+                <li><a href="index7.html">Контакты</a></li>
+                <li><a href="#">Доставка</a></li>
+            </ol>
+        </nav>
+    </footer>
+
+    <script>
+        const burger = document.getElementById('burger');
+        const nav = document.querySelector('.navigation');
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('open');
+            burger.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,762 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@400;700&display=swap');
+
+.geologica-uniquifier{
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0,
+    "SHRP" 0;
+}
+.jura-uniquifier {
+  font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  color: white;
+  font-family: "Jura", sans-serif;
+}
+
+body {
+  background-color: #311103;
+  overflow-x: hidden;
+}
+
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+  width: min(90%, 1200px);
+  margin: 0 auto;
+}
+
+
+.header-wrapper {
+  background-color: #311103;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo img {
+  height: 60px;
+  display: block;
+}
+
+.navigation ol {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.navigation ol li {
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 10px 28px;
+  font-size: 15px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.navigation ol li:hover {
+  background: rgba(255,255,255,0.12);
+}
+
+/* Бургер */
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.burger span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background: white;
+  border-radius: 2px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+
+
+.burger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.burger.active span:nth-child(2) { opacity: 0; }
+.burger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+
+
+.about h1,
+.history h2{
+  font-family: 'Geologica', sans-serif;
+  font-size: 3.33vw;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.advantages h2 {
+  font-family: 'Geologica', sans-serif;
+  font-size: 3.33vw;
+  font-weight: 400;
+  line-height: 1;
+  color: #311103;
+}
+
+.advantages h4, 
+.advantages-title {
+    font-family: 'Geologica', sans-serif;
+    font-size: 3.33vw;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #311103;
+    margin-top: 3%;
+}
+
+.about {
+  width: 100%;
+  height: 62.7vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about h1 {
+  margin-top: 4.5%;
+}
+
+.about h2 {
+  margin-top: 1.8%;
+  font-family: 'Jura', sans-serif;
+  font-size: 2.08vw;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.about p {
+  width: 60%;
+  font-family: 'Jura', sans-serif;
+  font-size: 1.67vw;
+  font-weight: 400;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.about p:first-of-type {
+    margin-top: 2.8%;
+}
+
+.about-img {
+  height: 48%;
+  margin-top: 5%;
+  border-radius: 6%;
+}
+
+.history {
+  width: 100%;
+  height: 53vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.history h2 {
+  margin-top: 2%;
+}
+
+.history h3 {
+  margin-top: 1.5%;
+  font-family: 'Jura', sans-serif;
+  font-size: 2vw;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.history-content {
+  width: 70%;
+  height: 66%;
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.history-text {
+  width: 50%;
+}
+
+.history-text p {
+  font-family: 'Jura', sans-serif;
+  font-size: 1.67vw;
+  font-weight: 400;
+  line-height: 1.28;
+}
+
+.history-text p:nth-of-type(2) {
+  margin-bottom: 7%;
+}
+
+.history-img {
+  width: 45%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6%;
+}
+
+.advantages {
+  width: 100%;
+  height: 50vw;
+  background: #c5a89c;
+  color: #311103;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.advantages h4 {
+  margin-top: 3%;
+}
+
+
+
+.advantages-card {
+  width: 65%;
+  height: 65%;
+  margin-top: 4%;
+  display: flex;
+}
+
+.advantages-img {
+  width: 48%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6%;
+  margin-right: 3%;
+}
+
+.advantages-text {
+  width: 48%;
+  height: 100%;
+  padding: 6% 5%;
+  background: #311103;
+  color: #fff;
+  border-radius: 6%;
+}
+
+.advantages-text p {
+  font-family: 'Jura', sans-serif;
+  font-size: 1.67vw;
+  font-weight: 400;
+}
+
+
+
+
+.advantages-title {
+  font-family: "Geologica", sans-serif;
+  font-size: 3.33vw;
+  font-weight: 400;
+  line-height: 1;
+  color: #311103;
+  margin-top: 3%;
+  text-align: center;
+}
+
+
+
+.cart-title {
+  width: 100%;
+  padding-left: 17%;
+  padding-top: 3.5%;
+  background: #311103;
+  color: #fff;
+}
+
+.cart-title h1 {
+  font-family: 'Geologica', sans-serif;
+  font-size: 3.33vw;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 2.5%;
+}
+
+.cart-items {
+  width: 100%;
+  background: #311103;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.8vw;
+}
+
+.cart-item {
+  width: 65%;
+  height: 15vw;
+  background: #c5a89c;
+  color: #311103;
+  border-radius: 2vw;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cart-item img {
+  width: 25%;
+  object-fit: fill;
+}
+
+.cart-info {
+  width: 58%;
+  height: 100%;
+  padding: 2.5% 0 2% 4.5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-info h2 {
+  font-family: 'Jura', sans-serif;
+  font-size: 1.65vw;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 2.5%;
+}
+
+.cart-info p {
+  font-family: 'Jura', sans-serif;
+  font-size: 1.25vw;
+  line-height: 1.15;
+  margin-bottom: 3%;
+}
+
+.cart-info span {
+  font-family: 'Jura', sans-serif;
+  font-size: 1.25vw;
+  line-height: 1.4;
+}
+
+.cart-info span:first-of-type {
+  margin-bottom: 3%;
+}
+
+.remove {
+  position: absolute;
+  top: 1.7%;
+  right: 3.6%;
+  background: none;
+  border: none;
+  color: #311103;
+  font-family: 'Jura', sans-serif;
+  font-size: 2.7vw;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.cart-controls {
+  position: absolute;
+  right: 2.2%;
+  top: 28%;
+  height: 62%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cart-controls button {
+  width: 4vw;
+  height: 4vw;
+  border: 0.1vw solid #fff;
+  border-radius: 38%;
+  background: transparent;
+  color: #000000;
+  font-family: 'Jura', sans-serif;
+  font-size: 2.55vw;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.order-details {
+  width: 65%;
+  height: 10vw;
+  margin-top: 3.2%;
+  margin-left: 17.5%;
+  padding: 1% 4.5%;
+  background: #c5a89c;
+  color: #311103;
+  border-radius: 1.4vw;
+}
+
+.order-details h2 {
+  font-family: 'Jura', sans-serif;
+  font-size: 1.65vw;
+  font-weight: 600;
+  margin-bottom: 1%;
+}
+
+.order-row {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Jura', sans-serif;
+  font-size: 1.35vw;
+  padding: 1.4% 0;
+}
+
+.order-row:first-of-type {
+  border-bottom: 0.1vw solid #2b0c04;
+}
+
+.checkout {
+  width: 39.5%;
+  margin-left: 17.5%;
+  margin-top: 3%;
+  margin-bottom: 5.5%;
+  padding: 1.1% 0;
+  background: #c5a89c;
+  border: 0.1vw solid #fff;
+  border-radius: 0.8vw;
+  color: #2b0c04;
+  font-family: 'Jura', sans-serif;
+  font-size: 1.25vw;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #1C0A01;
+  padding: 40px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  font-size: clamp(14px, 1.3vw, 20px);
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.footer-stay {
+  font-family: "Jura", sans-serif;
+  color: white;
+  white-space: nowrap;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.footer-nav li {
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 10px 24px;
+  transition: background 0.2s;
+}
+
+.footer-nav li:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+@media (max-width: 600px) {
+  
+  .logo img {
+    height: 44px;
+  }
+
+  .navigation {
+    display: none;
+    width: 100%;
+    order: 3;
+  }
+
+  .navigation.open {
+    display: block;
+  }
+
+  .navigation ol {
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  .navigation ol li {
+    padding: 12px 20px;
+    justify-content: center;
+  }
+
+  .burger {
+    display: flex;
+  }
+}
+
+@media (max-width: 600px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 32px 5%;
+  }
+
+  .footer-nav {
+    justify-content: center;
+  }
+
+  .footer-nav li {
+    padding: 10px 16px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+    .about, .history, .advantages {
+        height: auto !important; 
+        padding: 40px 15px;      
+    }
+
+    .about h1, .history h2, .advantages h2 {
+        font-size: 28px; 
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    .about h2 {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .about p, .history p, .advantages p {
+        width: 100%;   
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .about-img {
+        width: 100%;    
+        height: auto;
+        margin-top: 20px;
+    }
+
+
+    .cart-item {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .cart-item img {
+        width: 120px; 
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .cart-info h2 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .cart-info p {
+        font-size: 14px; 
+        margin-bottom: 10px;
+    }
+
+    .cart-info span {
+        font-size: 16px; 
+        display: block;            
+        margin: 4px 0;
+    }
+
+
+    .cart-controls button {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+    .order-details {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .order-row span {
+        font-size: 16px;
+    }
+
+    .checkout {
+        width: 100% !important;
+        padding: 15px !important;
+        font-size: 18px !important; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    .about, .history, .advantages {
+        height: auto;
+        padding: 40px 15px;
+        margin-top: 0;
+    }
+
+    /* Заголовки */
+    .about h1, .history h2, .advantages h2 {
+        font-size: 28px; 
+        line-height: 1.2;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .about h2, .history h3 {
+        font-size: 18px;
+        line-height: 1.2;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .history-content, .advantages-card {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        width: 100%;
+    }
+
+    .about p, .history-text, .advantages-text {
+        width: 100%; 
+        text-align: center;
+    }
+
+    .about p, .history-text p, .advantages-text p {
+        font-size: 16px;
+        line-height: 1.4;
+        width: 100%;
+    }
+
+    .about-img, .history-img, .advantages-img {
+        width: 100%;
+        max-width: 340px;
+        height: auto;
+        margin: 15px auto 0 auto;
+        border-radius: 12px;
+    }
+
+    .cart-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px 15px;
+        gap: 15px;
+    }
+
+    .cart-item img {
+        width: 130px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .cart-info {
+        text-align: center;
+        width: 100%;
+    }
+
+    .cart-info h2 {
+        font-size: 18px ;
+        margin-bottom: 8px;
+    }
+
+    .cart-info p {
+        font-size: 14px;
+        line-height: 1.3;
+        margin-bottom: 10px;
+    }
+
+    .cart-info span {
+        font-size: 16px;
+        display: block; 
+        margin: 5px 0;
+    }
+
+    .cart-controls {
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .cart-controls button {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+
+    .remove {
+        position: relative;
+        margin-top: 10px;
+    }
+
+    .order-details {
+        width: 100%;
+        padding: 20px;
+        margin-top: 30px;;
+    }
+
+    .order-row span {
+        font-size: 16px;
+    }
+
+    .checkout {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+        margin-top: 15px;
+    }
+    .advantages h4, 
+    .advantages-title {
+      font-size: 28px;
+      margin-top: 5%;
+    }
+}
+
+
+
+
+
+
+
+

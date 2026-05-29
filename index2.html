@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О нас</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400&family=Jura:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div class="header-wrapper">
+        <header class="container">
+            <div class="logo"><img src="img/logo.png" alt="logo"></div>
+            <nav class="navigation">
+                <ol>
+                    <li><a href="index6.html">Блог</a></li>
+                    <li><a href="index2.html">О нас</a></li>
+                    <li><a href="index1.html">Каталог</a></li>
+                    <li><a href="index3.html">Корзина</a></li>
+                </ol>
+            </nav>
+            <!-- Бургер-кнопка для мобильных -->
+            <button class="burger" id="burger" aria-label="Меню">
+                <span></span><span></span><span></span>
+            </button>
+        </header>
+    </div>
+
+  <div class="about">
+    <h1>О НАС</h1>
+    <h2>Делаем с любовью!</h2>
+
+    <p>Мы создаём не просто ароматические свечи — мы создаём настроение, к которому хочется возвращаться.</p>
+    <p>Каждая свеча в нашей коллекции — это маленькая история.</p>
+    <p>Нам важно не только то, как пахнет свеча, но и то, что вы чувствуете, зажигая её. Тишина вечера, страницы книги,
+      мягкий свет — всё это складывается в момент, который принадлежит только вам.</p>
+    <img class="about-img" src="img/teamwork.svg" alt="Рабочий процесс">
+  </div>
+
+  <div class="history">
+    <h2>ИСТОРИЯ БРЕНДА</h2>
+    <h3>От идеи к свечам</h3>
+
+    <div class="history-content">
+      <div class="history-text">
+        <p>Бренд начался с простого желания — наполнить дом уютом и теплом, которое чувствуется через ароматы.</p>
+
+        <p>Сначала это были свечи для себя и близких: мы искали идеальные сочетания запахов, тестировали натуральный воск и создавали атмосферу, в которую хотелось возвращаться после долгого дня.</p>
+        <p>Сегодня мы продолжаем создавать ароматические свечи вручную, чтобы у каждого была возможность замедлиться,расслабиться и наполнить свой дом особой атмосферой уюта и гармонии.</p>
+      </div>
+
+      <img class="history-img" src="img/candle.svg" alt="Candle">
+    </div>
+  </div>
+
+  <div class="advantages">
+    <h4>ПРЕИМУЩЕСТВА</h4>
+
+    <div class="advantages-card">
+      <img class="advantages-img" src="img/candle_packed.svg" alt="Packed candle">
+
+      <div class="advantages-text">
+        <p>Натуральный состав свечей, использование качественного воска, долгое и равномерное горение, гармоничные и продуманные ароматы, уникальная концепция, эстетика, идея для подарка близким и друзьям.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+    <footer>
+        <p class="footer-stay">Оставайтесь на связи!</p>
+        <nav>
+            <ol class="footer-nav">
+                <li><a href="#">Личный кабинет</a></li>
+                <li><a href="index7.html">Контакты</a></li>
+                <li><a href="#">Доставка</a></li>
+            </ol>
+        </nav>
+    </footer>
+
+    <script>
+        const burger = document.getElementById('burger');
+        const nav = document.querySelector('.navigation');
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('open');
+            burger.classList.toggle('active');
+        });
+    </script>
+
+</body>
+
+</html>

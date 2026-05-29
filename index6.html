@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style6.css">
+    <title>Блог</title>
+</head>
+<body>
+        <!-- HEADER -->
+    <div class="header-wrapper">
+        <header class="container">
+            <div class="logo"><img src="img/logo.png" alt="logo"></div>
+            <nav class="navigation">
+                <ol>
+                    <li><a href="index6.html">Блог</a></li>
+                    <li><a href="index2.html">О нас</a></li>
+                    <li><a href="index1.html">Каталог</a></li>
+                    <li><a href="index3.html">Корзина</a></li>
+                </ol>
+            </nav>
+            <!-- Бургер-кнопка для мобильных -->
+            <button class="burger" id="burger" aria-label="Меню">
+                <span></span><span></span><span></span>
+            </button>
+        </header>
+    </div>
+
+<section class="hero-section">
+  <div class="container">
+    <h1 class="page-title">Блог</h1>
+    <h2 class="section-title">Как мы делаем свечи</h2>
+  </div>
+</section>
+
+<section class="article-section">
+    <div class="article-grid">
+        
+        <div class="article-text">
+            <p>В основе наших свечей — качественный воск растительного происхождения. Мы выбираем компоненты, которые безопасны при горении и не перегружают пространство. Перед производством мы тестируем сочетания ароматов, добиваясь мягкого и гармоничного звучания. Каждая свеча заливается вручную. Это позволяет контролировать качество на каждом этапе и уделять внимание деталям. Фитиль подбирается под размер свечи и тип воска.</p>
+            <p>Перед тем как попасть к вам, каждая свеча проходит проверку качества. Мы убеждаемся, что: она горит ровно, аромат раскрывается правильно, внешний вид соответствует нашей эстетике</p>
+            <p>После этого свеча упаковывается и становится частью вашей атмосферы.</p>
+        </div>
+
+        <div class="article-images">
+            <img src="img/Svechi.jpg" alt="svechi" class="img-item">
+            <img src="img/Svechi2.png" alt="svechi2" class="img-item">
+        </div>
+
+    </div>
+</section>
+
+
+
+<div class="container2">
+    <h2 class="hero-title">Полезное</h2>
+    <p class="text">
+      Как выбрать свечу, ухаживать, сочетать? Все это можно узнать в наших статьях про ароматические свечи!</p>
+    <div class="container4">
+      <article>
+        <img src="img/st1.png" alt="st1">
+        <button class="btn_one">Читать статью</button>
+      </article>
+      <article>
+        <img src="img/St2.png" alt="st4">
+        <button class="btn_one">Читать статью</button>
+      </article>
+      <article>
+        <img src="img/st3.png" alt="st3">
+        <button class="btn_one">Читать статью</button>
+      </article>
+    </div>
+</div>
+
+
+    <footer>
+        <p class="footer-stay">Оставайтесь на связи!</p>
+        <nav>
+            <ol class="footer-nav">
+                <li><a href="#">Личный кабинет</a></li>
+                <li><a href="index7.html">Контакты</a></li>
+                <li><a href="#">Доставка</a></li>
+            </ol>
+        </nav>
+    </footer>
+
+    <script>
+        const burger = document.getElementById('burger');
+        const nav = document.querySelector('.navigation');
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('open');
+            burger.classList.toggle('active');
+        });
+    </script>

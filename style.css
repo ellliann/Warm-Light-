@@ -1,0 +1,520 @@
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  color: white;
+  font-family: "Jura", sans-serif;
+}
+
+body {
+  background-color: #311103;
+  overflow-x: hidden;
+}
+
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+
+.container {
+  width: min(90%, 1200px);
+  margin: 0 auto;
+}
+
+
+.header-wrapper {
+  background-color: #311103;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo img {
+  height: 60px;
+  display: block;
+}
+
+.navigation ol {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.navigation ol li {
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 10px 28px;
+  font-size: 15px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.navigation ol li:hover {
+  background: rgba(255,255,255,0.12);
+}
+
+/* Бургер */
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.burger span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background: white;
+  border-radius: 2px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.burger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.burger.active span:nth-child(2) { opacity: 0; }
+.burger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+
+
+.image-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.image-container > img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.text-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(90%, 1200px);
+  padding-bottom: 25%;
+}
+
+.hero-title {
+  font-family: "Geologica", sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
+
+.text-overlay .hero-title {
+  font-size: clamp(22px, 3.5vw, 44px);
+  margin-bottom: 20px;
+  max-width: 70%;
+  line-height: 1.2;
+}
+
+.text-overlay p {
+  font-family: "Jura", sans-serif;
+  font-size: clamp(14px, 1.5vw, 18px);
+  max-width: 55%;
+  line-height: 1.6;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 56px;
+  margin-top: 32px;
+  border-radius: 50px;
+  border: 3px solid #481818;
+  background: rgba(255, 255, 255, 0.45);
+  color: white;
+  font-family: "Jura", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.65);
+}
+
+
+.section-title {
+  text-align: center;
+  padding: 60px 20px 40px;
+}
+
+.section-title h2 {
+  font-family: "Geologica", sans-serif;
+  font-size: clamp(22px, 3vw, 38px);
+  text-transform: uppercase;
+  color: white;
+  line-height: 1.3;
+}
+
+
+.background3 {
+  background-color: #BCA296;
+  border-radius: 40px;
+  padding: 40px 50px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 60px;
+}
+
+.text-column {
+  flex: 1 1 300px;
+}
+
+.text-column h3 {
+  font-family: "Geologica", sans-serif;
+  font-size: clamp(22px, 2.5vw, 32px);
+  text-transform: uppercase;
+  color: #1a0801;
+  margin-bottom: 20px;
+}
+
+.description {
+  color: #1a0801;
+  font-size: clamp(15px, 1.5vw, 22px);
+  line-height: 1.6;
+}
+
+.small-img {
+  flex: 0 0 45%;
+  max-width: 45%;
+  height: auto;
+  border-radius: 30px;
+  object-fit: cover;
+  display: block;
+}
+
+.two_flex {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+
+.image-container2 {
+  position: relative;
+  flex: 1 1 280px;
+  max-width: 380px;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.image-container2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 40px;
+  min-height: 300px;
+}
+
+.description_two {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  color: white;
+  text-align: center;
+  font-size: clamp(14px, 1.4vw, 20px);
+  line-height: 1.5;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.5);
+}
+
+
+.reviews-section {
+  width: 100%;
+  margin-bottom: 60px;
+  padding: 0 5%;
+}
+
+.background4 {
+  background-color: #BCA296;
+  border: 6px solid #764B4B;
+  border-radius: 20px;
+  padding: 50px 40px 60px;
+}
+
+.background4 h4 {
+  color: #311103;
+  font-family: "Geologica", sans-serif;
+  font-size: clamp(22px, 3vw, 40px);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-family: "Geologica", sans-serif;
+  color: #311103;
+  font-size: clamp(18px, 2.5vw, 36px);
+  text-align: center;
+  display: block;
+  margin-bottom: 40px;
+}
+
+.overlay-container {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.review-card {
+  background-color: #311103;
+  border-radius: 30px;
+  padding: 24px;
+  flex: 1 1 260px;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.review-card p {
+  font-size: clamp(13px, 1.2vw, 20px);
+  line-height: 1.5;
+  color: white;
+}
+
+.reviewer-name {
+  font-size: clamp(15px, 1.3vw, 22px) !important;
+  font-weight: 600;
+}
+
+.review-card img {
+  width: 160px;
+  height: 90px;
+  border-radius: 16px;
+  object-fit: cover;
+  margin-top: 8px;
+}
+
+
+footer {
+  background-color: #1C0A01;
+  padding: 40px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  font-size: clamp(14px, 1.3vw, 20px);
+  flex-wrap: wrap;
+}
+
+.footer-stay {
+  font-family: "Jura", sans-serif;
+  color: white;
+  white-space: nowrap;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.footer-nav li {
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 10px 24px;
+  transition: background 0.2s;
+}
+
+.footer-nav li:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+@media (max-width: 900px) {
+  .text-overlay .hero-title {
+    max-width: 90%;
+  }
+
+  .text-overlay p {
+    max-width: 85%;
+  }
+
+  .background3 {
+    flex-direction: column;
+    padding: 30px;
+    gap: 30px;
+  }
+
+  .small-img {
+    max-width: 100%;
+    flex: none;
+    width: 100%;
+  }
+
+  .two_flex {
+    gap: 20px;
+  }
+
+  .image-container2 {
+    flex: 1 1 220px;
+  }
+}
+
+@media (max-width: 600px) {
+  
+  .logo img {
+    height: 44px;
+  }
+
+  .navigation {
+    display: none;
+    width: 100%;
+    order: 3;
+  }
+
+  .navigation.open {
+    display: block;
+  }
+
+  .navigation ol {
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  .navigation ol li {
+    padding: 12px 20px;
+    justify-content: center;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+ 
+  .image-container > img {
+    height: 60vh;
+    min-height: 320px;
+  }
+
+  .text-overlay {
+    padding-bottom: 30px;
+  }
+
+  .text-overlay .hero-title {
+    max-width: 100%;
+    font-size: clamp(18px, 5vw, 28px);
+  }
+
+  .text-overlay p {
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  .btn {
+    width: 180px;
+    height: 48px;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  
+  .section-title {
+    padding: 40px 16px 24px;
+  }
+
+  
+  .background3 {
+    padding: 24px 20px;
+  }
+
+  
+  .two_flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-container2 {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  
+  .reviews-section {
+    padding: 0 16px;
+  }
+
+  .background4 {
+    padding: 32px 20px 40px;
+  }
+
+  .overlay-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review-card {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 32px 5%;
+  }
+
+  .footer-nav {
+    justify-content: center;
+  }
+
+  .footer-nav li {
+    padding: 10px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+    .background3 {
+      flex-direction: column; 
+      padding: 25px 20px; 
+      gap: 20px; 
+    }
+    .text-column {
+      flex: 1 1 auto; 
+    }
+    .small-img {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+}
